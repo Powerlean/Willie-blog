@@ -6,7 +6,9 @@ import MDXComponents from "../../components/MDXComponents";
 import {getFileBySlug, getFiles} from "../../lib/mdx";
 import distanceToNow from "../../lib/daterelative";
 import { TimeIcon } from "@chakra-ui/icons"
-
+import Form from '../../components/form'
+import Comments from '../../components/comments'
+import useComment from '../../hooks/useComment'
 
 
 const postanimate = {
@@ -28,6 +30,7 @@ const Layout = ({ children }) => (
 );
 
 const BlogPost = ({ post }) => {
+  const [comments, onSubmit, text, textSet] = useComment()
   const { metaData, contentSerialized } = post;
   return (
     <Container mt={10} mb={100} maxWidth={"container.md"}>
@@ -57,6 +60,9 @@ const BlogPost = ({ post }) => {
           components={MDXComponents}
           compiledSource={contentSerialized.compiledSource}
         />
+
+<Form onSubmit={onSubmit} textSet={textSet} text={text} />
+      <Comments comments={comments} />
       </Layout>
     </Container>
   );
