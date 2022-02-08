@@ -15,7 +15,7 @@ export default function Form({ onSubmit, text, textSet }) {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
 
   return (
-    <form mt={10} onSubmit={onSubmit}>
+    <Formcontrol as="form" mt={10} onSubmit={onSubmit}>
       <Textarea
         rows="2"
         p={3} 
@@ -52,6 +52,6 @@ export default function Form({ onSubmit, text, textSet }) {
           </button>
         )}
       </Box>
-    </form>
+    </FormControl>
   )
 }
