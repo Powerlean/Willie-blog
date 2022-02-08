@@ -27,7 +27,7 @@ export default function Form({ onSubmit, text, textSet }) {
 
       <Box mt={3} mb={6}>
         {isAuthenticated ? (
-          <Flex align="center" >
+          <Flex>
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
@@ -36,16 +36,16 @@ export default function Form({ onSubmit, text, textSet }) {
             <span ml={5}>{user.name}</span>
 </Box>
             <Button
-              colorScheme="red"
-              p="1px" 
+              colorScheme="gray"
+              p={3} 
               borderWidth="1px" 
-              rounded="full"
+              rounded="md"
               typeof="button"
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
               }
             >
-              x
+              x LogOut
             </Button>
           </Flex>
         ) : (
