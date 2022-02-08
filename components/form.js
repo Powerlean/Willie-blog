@@ -15,8 +15,7 @@ export default function Form({ onSubmit, text, textSet }) {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
 
   return (
-    <Box mt={10}>
-    <FormControl p={3} onSubmit={onSubmit}>
+    <FormControl p={3} mt={10} onSubmit={onSubmit}>
       <Textarea
         rows="2"
         p={3} 
@@ -27,12 +26,9 @@ export default function Form({ onSubmit, text, textSet }) {
       />
 
         {isAuthenticated ? (
-             <Box mt={3} mb={6}>
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-            </Box>
-<Box mt={10}>
           <Flex>
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
             <Code mt={2}>{user.name}</Code>
@@ -50,7 +46,6 @@ export default function Form({ onSubmit, text, textSet }) {
               x LogOut
             </Button>
           </Flex>
-</Box>
         ) : (
           <Button
             colorScheme='gray'
@@ -64,6 +59,5 @@ export default function Form({ onSubmit, text, textSet }) {
           </Button>
         )}
     </FormControl>
-</Box>
   )
 }
