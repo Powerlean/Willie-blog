@@ -39,7 +39,7 @@ export default function Form({ onSubmit, text, textSet }) {
             </Button>
             <Image src={user.picture} width="30px" rounded="full" />
             <span>{user.name}</span>
-            <Button
+            <button
             colorScheme='teal'
             variant='solid
               typeof="button"
@@ -48,17 +48,17 @@ export default function Form({ onSubmit, text, textSet }) {
               }
             >
               x
-            </Button>
+            </button>
           </Box>
         ) : (
-          <Button
+          <button
             colorScheme='teal'
             variant='solid
             typeof="button"
             onClick={() => loginWithRedirect()}
           >
             Login
-          </Button>
+          </button>
   <FormHelperText>Please try again</FormHelperText>
         )}
       </Box>
