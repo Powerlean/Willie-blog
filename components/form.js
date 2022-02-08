@@ -28,10 +28,10 @@ export default function Form({ onSubmit, text, textSet }) {
 
       <Box mt={1} mb={6}>
         {isAuthenticated ? (
-          <Flex>
-            <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
+            <Button colorScheme='teal' mt={2} p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
+        <Flex>
         <Box mt={10}
         p={3} 
         borderWidth="1px" 
@@ -40,12 +40,10 @@ export default function Form({ onSubmit, text, textSet }) {
             <Code mt={2}>{user.name}</Code>
 
             <Button
-              colorScheme="gray"
-              p={3} 
               borderWidth="1px" 
               rounded="md"
               typeof="button"
-              mt={2}
+              mt={5}
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
               }
