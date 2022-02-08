@@ -1,44 +1,67 @@
 import { useAuth0 } from '@auth0/auth0-react'
+import {
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  FormHelperText,
+  Textarea,
+  Box,
+  Image,
+  Button
+} from '@chakra-ui/react';
+
 
 export default function Form({ onSubmit, text, textSet }) {
+
+
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
 
   return (
-    <form className="mt-10" onSubmit={onSubmit}>
-      <textarea
+
+    
+    <FormControl mt={10} p={3} borderWidth="1px" rounded="md" onSubmit={onSubmit}>
+      <Textarea
         rows="2"
-        className="border border-gray-300 rounded w-full block px-2 py-1"
+        p={3}
+        borderWidth="1px"
+        rounded="md"
         onChange={(e) => textSet(e.target.value)}
         value={text}
       />
 
-      <div className="mt-4">
+      <Box mt={4}>
         {isAuthenticated ? (
-          <div className="flex items-center space-x-2">
-            <button className="bg-blue-600 text-white px-2 py-1 rounded">
+          <Box mt={2}>
+                   <Button
+            colorScheme='teal'
+            variant='solid
               Send
             </button>
-            <img src={user.picture} width={30} className="rounded-full" />
+            <Image src={user.picture} width="30px" rounded="full" />
             <span>{user.name}</span>
-            <button
+            <Button
+            colorScheme='teal'
+            variant='solid
               typeof="button"
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
               }
             >
               x
-            </button>
-          </div>
+            </Button>
+          </Box>
         ) : (
-          <button
-            className="bg-blue-600 text-white px-2 py-1 rounded"
+          <Button
+            colorScheme='teal'
+            variant='solid
             typeof="button"
             onClick={() => loginWithRedirect()}
           >
             Login
-          </button>
+          </Button>
+  <FormHelperText>Please try again</FormHelperText>
         )}
-      </div>
-    </form>
+      </Box>
+    </FromControl>
   )
 }
