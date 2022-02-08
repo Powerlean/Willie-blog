@@ -27,11 +27,12 @@ export default function Form({ onSubmit, text, textSet }) {
         placeholder='Leave your comment' 
       />
 
-      <Box mt={3} mb={6}>
         {isAuthenticated ? (
+               <Box mt={3} mb={6}>
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
+</Box>
 <Box mt={10}>
           <Flex>
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
@@ -63,7 +64,6 @@ export default function Form({ onSubmit, text, textSet }) {
             Login
           </Button>
         )}
-      </Box>
     </FormControl>
 </Box>
   )
