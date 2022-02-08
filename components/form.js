@@ -1,13 +1,8 @@
 import { useAuth0 } from '@auth0/auth0-react'
 import {
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
   Textarea,
   Box,
   Image,
-  Button
 } from '@chakra-ui/react';
 
 
@@ -15,7 +10,8 @@ export default function Form({ onSubmit, text, textSet }) {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
 
   return (
-    <Formcontrol as="form" mt={10} onSubmit={onSubmit}>
+    <Box mt={20}>
+    <form onSubmit={onSubmit}>
       <Textarea
         rows="2"
         p={3} 
@@ -31,8 +27,10 @@ export default function Form({ onSubmit, text, textSet }) {
             <button p={3} borderWidth="1px" rounded="md">
               Send
             </button>
-            <Image src={user.picture} alt="logo" width={30} rounded="full" />
+<Box mt={10}>
+            <Image src={user.picture} alt="logo" width="30px" my={5} mr={5} rounded="md" />
             <span>{user.name}</span>
+</Box>
             <button
               typeof="button"
               onClick={() =>
@@ -44,7 +42,6 @@ export default function Form({ onSubmit, text, textSet }) {
           </div>
         ) : (
           <button
-            className="bg-blue-600 text-white px-2 py-1 rounded"
             typeof="button"
             onClick={() => loginWithRedirect()}
           >
@@ -52,6 +49,7 @@ export default function Form({ onSubmit, text, textSet }) {
           </button>
         )}
       </Box>
-    </FormControl>
+    </form>
+</Box>
   )
 }
