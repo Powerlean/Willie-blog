@@ -34,7 +34,7 @@ export default function Form({ onSubmit, text, textSet }) {
           <Box mt={2}>
                    <Button
             colorScheme='teal'
-            variant='solid
+            variant='solid'>
               Send
             </button>
             <Image src={user.picture} width="30px" rounded="full" />
