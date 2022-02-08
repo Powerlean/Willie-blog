@@ -44,6 +44,7 @@ export default function Form({ onSubmit, text, textSet }) {
               rounded="md"
               typeof="button"
               mt={5}
+              fontSize="sm"
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
               }
