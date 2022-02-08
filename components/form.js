@@ -10,12 +10,12 @@ import {
   Code
 } from '@chakra-ui/react';
 
-
 export default function Form({ onSubmit, text, textSet }) {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
 
   return (
-    <FormControl p={3} mt={10} onSubmit={onSubmit}>
+    <Box mt={10}>
+    <FormControl p={3} onSubmit={onSubmit}>
       <Textarea
         rows="2"
         p={3} 
@@ -25,16 +25,19 @@ export default function Form({ onSubmit, text, textSet }) {
         value={text}
       />
 
+      <Box mt={3} mb={6}>
         {isAuthenticated ? (
+          <Flex>
+         <Box mt={10}>
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-          <Flex>
+
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
-            <Code mt={2}>{user.name}</Code>
+            <Code mt={3}>{user.name}</Code>
+
             <Button
               colorScheme="gray"
-              my={3}
               p={3} 
               borderWidth="1px" 
               rounded="md"
@@ -45,6 +48,7 @@ export default function Form({ onSubmit, text, textSet }) {
             >
               x LogOut
             </Button>
+</Box>
           </Flex>
         ) : (
           <Button
@@ -58,6 +62,8 @@ export default function Form({ onSubmit, text, textSet }) {
             Login
           </Button>
         )}
+      </Box>
     </FormControl>
+</Box>
   )
 }
