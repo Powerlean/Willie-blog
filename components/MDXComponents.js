@@ -22,7 +22,7 @@ const ChakraHighlight = chakra(Highlight, {
 const CustomImage = (props) =>{
   const src = props.src;
   return (
-      <Image src={src} borderRadius="lg" filter={useColorModeValue('brightness(90%)', 'brightness(70%)')} {...props}/>
+      <Image src={src} alt={src} borderRadius="lg" filter={useColorModeValue('brightness(90%)', 'brightness(70%)')} {...props}/>
   )}
 const CustomLink = (props) => {
   const { colorMode } = useColorMode();
