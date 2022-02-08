@@ -7,7 +7,6 @@ import {
   FormHelperText,
   FormControl,
   Flex,
-  useColorModeValue
 } from '@chakra-ui/react';
 
 
@@ -37,8 +36,8 @@ export default function Form({ onSubmit, text, textSet }) {
             <span  display="inline" ml={5}>{user.name}</span>
 </Box>
             <Button
-              colorScheme="gray"
-              p={3} 
+              colorScheme="red"
+              p={1} 
               borderWidth="1px" 
               rounded="full"
               typeof="button"
@@ -51,7 +50,7 @@ export default function Form({ onSubmit, text, textSet }) {
           </Flex>
         ) : (
           <Button
-            colorScheme='whatsapp'
+            colorScheme='gray'
             p={3} 
             borderWidth="1px" 
             rounded="md"
