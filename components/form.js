@@ -7,6 +7,7 @@ import {
   FormHelperText,
   FormControl,
   Flex,
+  Code
 } from '@chakra-ui/react';
 
 
@@ -23,17 +24,18 @@ export default function Form({ onSubmit, text, textSet }) {
         rounded="md"
         onChange={(e) => textSet(e.target.value)}
         value={text}
+        placeholder='Leave your comment' 
       />
 
       <Box mt={3} mb={6}>
         {isAuthenticated ? (
-          <Flex>
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
+          <Flex mt={2}>
 <Box mt={10}>
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
-            <span ml={5}>{user.name}</span>
+            <Code mt={2}>{user.name}</Code>
 </Box>
             <Button
               colorScheme="gray"
