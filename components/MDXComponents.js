@@ -167,7 +167,7 @@ const MDXComponents = {
           fontFamily="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
           borderBottomWidth="2px"
           mb={5}
-          mt={10}
+          mt={8}
           {...props}
       />
   ),
@@ -180,7 +180,7 @@ const MDXComponents = {
           fontFamily="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
           borderBottomWidth="1px"
           mb={4}
-          mt={6}
+          mt={5}
           {...props}
       />
   ),
@@ -223,8 +223,8 @@ const MDXComponents = {
           {...props}
       />
   ),
-  ul: (props) => <UnorderedList as="ul" lineHeight="1.75" pt={2} pl={4}  mt={4} mb={4} {...props} />,
-  ol: (props) => <OrderedList as="ol" lineHeight="1.75" pt={2} pl={6}  mt={4} mb={4} {...props} />,
+  ul: (props) => <UnorderedList as="ul" lineHeight="1.75" pt={2} pl={4}  mt={3} mb={3} {...props} />,
+  ol: (props) => <OrderedList as="ol" lineHeight="1.75" pt={2} pl={6}  mt={3} mb={3} {...props} />,
   li: (props) => <ListItem as="li"  {...props} />,
   blockquote: Quote,
   img: CustomImage,
