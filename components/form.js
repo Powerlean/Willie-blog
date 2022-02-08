@@ -32,13 +32,13 @@ export default function Form({ onSubmit, text, textSet }) {
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-          <Flex mt={2}>
 <Box mt={10}>
+          <Flex>
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
             <Code mt={2}>{user.name}</Code>
-</Box>
             <Button
               colorScheme="gray"
+              my={3}
               p={3} 
               borderWidth="1px" 
               rounded="md"
@@ -50,6 +50,7 @@ export default function Form({ onSubmit, text, textSet }) {
               x LogOut
             </Button>
           </Flex>
+</Box>
         ) : (
           <Button
             colorScheme='gray'
