@@ -25,7 +25,7 @@ export default function Form({ onSubmit, text, textSet }) {
         value={text}
       />
 
-      <Box mt={4}>
+      <Box mt={6}>
         {isAuthenticated ? (
           <Flex align="center" >
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
@@ -33,11 +33,11 @@ export default function Form({ onSubmit, text, textSet }) {
             </Button>
 <Box mt={10}>
             <Image src={user.picture} alt="logo" width="30px" my={5} mr={5} rounded="full" />
-            <span  display="inline" ml={5}>{user.name}</span>
+            <span ml={5}>{user.name}</span>
 </Box>
             <Button
               colorScheme="red"
-              p={1} 
+              p="1px" 
               borderWidth="1px" 
               rounded="full"
               typeof="button"
