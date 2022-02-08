@@ -3,6 +3,8 @@ import {
   Textarea,
   Box,
   Image,
+  Button,
+  FormHelperText,
   FormControl
 } from '@chakra-ui/react';
 
@@ -12,7 +14,7 @@ export default function Form({ onSubmit, text, textSet }) {
 
   return (
     <Box mt={10}>
-    <FormControl bg="gray.200" onSubmit={onSubmit}>
+    <FormControl p={3} onSubmit={onSubmit}>
       <Textarea
         rows="2"
         p={3} 
@@ -25,29 +27,37 @@ export default function Form({ onSubmit, text, textSet }) {
       <Box mt={4}>
         {isAuthenticated ? (
           <div className="flex items-center space-x-2">
-            <button p={3} borderWidth="1px" rounded="md">
+            <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
-            </button>
+            </Button>
 <Box mt={10}>
-            <Image src={user.picture} alt="logo" width="30px" my={5} mr={5} rounded="md" />
-            <span>{user.name}</span>
+            <Image src={user.picture} alt="logo" width="30px" my={5} mr={5} rounded="full" />
+            <span my={5} mr={5}>{user.name}</span>
 </Box>
-            <button
+            <Button
+              colorScheme='telegram' 
+              p={3} 
+              borderWidth="1px" 
+              rounded="md"
               typeof="button"
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
               }
             >
               x
-            </button>
+            </Button>
           </div>
         ) : (
-          <button
+          <Button
+            colorScheme='whatsapp'
+            p={3} 
+            borderWidth="1px" 
+            rounded="md"
             typeof="button"
             onClick={() => loginWithRedirect()}
           >
             Login
-          </button>
+          </Button>
         )}
       </Box>
     </FormControl>
