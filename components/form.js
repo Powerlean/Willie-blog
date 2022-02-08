@@ -12,18 +12,14 @@ import {
 
 
 export default function Form({ onSubmit, text, textSet }) {
-
-
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
 
   return (
-
-    
-    <FormControl mt={10} p={3} borderWidth="1px" rounded="md" onSubmit={onSubmit}>
+    <form mt={10} onSubmit={onSubmit}>
       <Textarea
         rows="2"
-        p={3}
-        borderWidth="1px"
+        p={3} 
+        borderWidth="1px" 
         rounded="md"
         onChange={(e) => textSet(e.target.value)}
         value={text}
@@ -31,17 +27,13 @@ export default function Form({ onSubmit, text, textSet }) {
 
       <Box mt={4}>
         {isAuthenticated ? (
-          <Box mt={2}>
-                   <Button
-            colorScheme='teal'
-            variant='solid'>
+          <div className="flex items-center space-x-2">
+            <button p={3} borderWidth="1px" rounded="md">
               Send
-            </Button>
-            <Image src={user.picture} width="30px" rounded="full" />
+            </button>
+            <Image src={user.picture} alt="logo" width={30} rounded="full" />
             <span>{user.name}</span>
             <button
-            colorScheme='teal'
-            variant='solid
               typeof="button"
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
@@ -49,19 +41,17 @@ export default function Form({ onSubmit, text, textSet }) {
             >
               x
             </button>
-          </Box>
+          </div>
         ) : (
           <button
-            colorScheme='teal'
-            variant='solid
+            className="bg-blue-600 text-white px-2 py-1 rounded"
             typeof="button"
             onClick={() => loginWithRedirect()}
           >
             Login
           </button>
-  <FormHelperText>Please try again</FormHelperText>
         )}
       </Box>
-    </FromControl>
+    </form>
   )
 }
