@@ -23,18 +23,21 @@ export default function Form({ onSubmit, text, textSet }) {
         rounded="md"
         onChange={(e) => textSet(e.target.value)}
         value={text}
+        placeholder='Here is a comment' 
       />
 
-      <Box mt={3} mb={6}>
+      <Box mt={1} mb={6}>
         {isAuthenticated ? (
           <Flex>
-         <Box mt={10}>
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-
+        <Box mt={10}
+        p={3} 
+        borderWidth="1px" 
+        rounded="md">
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
-            <Code mt={3}>{user.name}</Code>
+            <Code mt={2}>{user.name}</Code>
 
             <Button
               colorScheme="gray"
@@ -42,6 +45,7 @@ export default function Form({ onSubmit, text, textSet }) {
               borderWidth="1px" 
               rounded="md"
               typeof="button"
+              mt={2}
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
               }
