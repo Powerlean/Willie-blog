@@ -24,15 +24,14 @@ export default function Form({ onSubmit, text, textSet }) {
         rounded="md"
         onChange={(e) => textSet(e.target.value)}
         value={text}
-        placeholder='Leave your comment' 
       />
 
         {isAuthenticated ? (
-               <Box mt={3} mb={6}>
+             <Box mt={3} mb={6}>
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-</Box>
+            </Box>
 <Box mt={10}>
           <Flex>
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
