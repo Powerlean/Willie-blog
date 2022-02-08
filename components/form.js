@@ -36,7 +36,7 @@ export default function Form({ onSubmit, text, textSet }) {
             colorScheme='teal'
             variant='solid'>
               Send
-            </button>
+            </Button>
             <Image src={user.picture} width="30px" rounded="full" />
             <span>{user.name}</span>
             <Button
