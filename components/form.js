@@ -37,7 +37,7 @@ export default function Form({ onSubmit, text, textSet }) {
             <span  display="inline" ml={5}>{user.name}</span>
 </Box>
             <Button
-              bg={useColorModeValue("#f1f1f180", "#38383880")} 
+              colorScheme="gray"
               p={3} 
               borderWidth="1px" 
               rounded="full"
