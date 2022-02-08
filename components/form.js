@@ -5,7 +5,9 @@ import {
   Image,
   Button,
   FormHelperText,
-  FormControl
+  FormControl,
+  Flex,
+  useColorModeValue
 } from '@chakra-ui/react';
 
 
@@ -26,19 +28,19 @@ export default function Form({ onSubmit, text, textSet }) {
 
       <Box mt={4}>
         {isAuthenticated ? (
-          <div className="flex items-center space-x-2">
+          <Flex align="center" >
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
 <Box mt={10}>
             <Image src={user.picture} alt="logo" width="30px" my={5} mr={5} rounded="full" />
-            <span my={5} mr={5}>{user.name}</span>
+            <span  display="inline" ml={5}>{user.name}</span>
 </Box>
             <Button
-              colorScheme='telegram' 
+              bg={useColorModeValue("#f1f1f180", "#38383880")} 
               p={3} 
               borderWidth="1px" 
-              rounded="md"
+              rounded="full"
               typeof="button"
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
@@ -46,7 +48,7 @@ export default function Form({ onSubmit, text, textSet }) {
             >
               x
             </Button>
-          </div>
+          </Flex>
         ) : (
           <Button
             colorScheme='whatsapp'
