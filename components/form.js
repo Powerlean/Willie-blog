@@ -39,7 +39,7 @@ export default function Form({ onSubmit, text, textSet }) {
               p={3}
               borderWidth="1px" 
               rounded="md" >
-<Tag size='lg borderWidth="1px" borderRadius='full' my={2}>
+<Tag size='lg' borderWidth="1px" borderRadius='full' my={2}>
   <Avatar
     src={user.picture}
     size='xs'
