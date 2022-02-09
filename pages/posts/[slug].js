@@ -56,8 +56,6 @@ const BlogPost = ({ post }) => {
           components={MDXComponents}
           compiledSource={contentSerialized.compiledSource}
         />
-
-<Form onSubmit={onSubmit} textSet={textSet} text={text} />
       </Layout>
     </Container>
   );
