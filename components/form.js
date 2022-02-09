@@ -30,8 +30,6 @@ export default function Form({ onSubmit, text, textSet }) {
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-<Flex>
-<>
 <Box mt={10}>
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
             <span ml={5}>{user.name}</span>
@@ -48,8 +46,6 @@ export default function Form({ onSubmit, text, textSet }) {
               x
          </Button>
 </Box>
-</>
-          </Flex>
 
         ) : (
           <Button
