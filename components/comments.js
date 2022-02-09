@@ -19,6 +19,7 @@ export default function Comments({ comments }) {
 <Text my={1} fontSize='xs' colorScheme='gray'>
      • Commented
     </Text>
+</Text>
     <Text fontSize='sm'>{text}</Text>
   </Box>
 </Flex>
