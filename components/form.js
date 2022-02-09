@@ -29,7 +29,7 @@ export default function Form({ onSubmit, text, textSet }) {
         value={text}
       />
 
-      <Box mt={2} mb={6}>
+      <Box mt={2} mb={6} colorScheme='gray'>
         {isAuthenticated ? (
 <>
             <Button colorScheme='telegram' p={3} borderWidth="1px" rounded="md">
@@ -39,7 +39,7 @@ export default function Form({ onSubmit, text, textSet }) {
               p={3}
               borderWidth="1px" 
               rounded="md" >
-<Tag size='lg' colorScheme='gray' borderWidth="1px" borderRadius='full' my={2}>
+<Tag size='lg borderWidth="1px" borderRadius='full' my={2}>
   <Avatar
     src={user.picture}
     size='xs'
