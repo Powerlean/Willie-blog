@@ -27,6 +27,7 @@ export default function Form({ onSubmit, text, textSet }) {
         rounded="md"
         onChange={(e) => textSet(e.target.value)}
         value={text}
+        placeholder='Comment here!'
       />
 
       <Box mt={2} mb={6} colorScheme='gray'>
