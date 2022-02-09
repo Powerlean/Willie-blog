@@ -6,7 +6,6 @@ export default function Comments({ comments }) {
   <Box p={3} my={4}>
       {comments.map(({ id, createdAt, text, user }) => {
         return (
-<>
 <Flex key={id} my={2}>
   <Avatar src={user.picture}
               alt={user.name} />
@@ -16,14 +15,11 @@ export default function Comments({ comments }) {
       <Badge ml='1' colorScheme='gray' fontSize='xs'>
      {DateTime.fromMillis(createdAt).toRelative()}
       </Badge>
-<Text my={1} fontSize='xs' colorScheme='gray'>
-     • Commented
-    </Text>
 </Text>
     <Text fontSize='sm'>{text}</Text>
   </Box>
 </Flex>
-</>
+
 
         )
       })}
