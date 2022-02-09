@@ -26,7 +26,6 @@ const Layout = ({ children }) => (
 );
 
 const BlogPost = ({ post }) => {
-  const [comments, onSubmit, text, textSet] = useComment()
   const { metaData, contentSerialized } = post;
   return (
     <Container mt={10} mb={100} maxWidth={"container.md"}>
