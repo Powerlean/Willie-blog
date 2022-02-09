@@ -7,7 +7,10 @@ import {
   FormHelperText,
   FormControl,
   Flex,
-  Code
+  Code,
+  Tag,
+  Avatar,
+  TagLabel
 } from '@chakra-ui/react';
 
 
@@ -36,12 +39,20 @@ export default function Form({ onSubmit, text, textSet }) {
               p={3}
               borderWidth="1px" 
               rounded="md" >
-            <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
-            <Code mb={2} mt={3} rounded='md'>{user.name}</Code>
-<FormHelperText my={3}>Please wait it</FormHelperText>
+<Tag size='lg' colorScheme='red' borderRadius='full' my={2}>
+  <Avatar
+    src={user.picture}
+    size='xs'
+    name='Avatar'
+    ml={-1}
+    mr={2}
+  />
+  <TagLabel>{user.name}</TagLabel>
+</Tag>
+
             <Button
               fontSize='sm'
-              mt={10}
+              mt={2}
               p={1}
               borderWidth="1px" 
               rounded="md"
