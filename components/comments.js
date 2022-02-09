@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon'
-import { Box, Flex, Image } from '@chakra-ui/react'
+import { Box, Flex, Text, Avatar, Badge } from '@chakra-ui/react'
 
 export default function Comments({ comments }) {
   return (
