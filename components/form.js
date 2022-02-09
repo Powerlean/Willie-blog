@@ -35,11 +35,11 @@ export default function Form({ onSubmit, text, textSet }) {
             <Button colorScheme='telegram' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-<Box          mt={2}
+<Box          mt={6}
               p={3}
               borderWidth="1px" 
               rounded="md" >
-<Tag size='lg' colorScheme='red' borderRadius='full' my={2}>
+<Tag size='lg' colorScheme='gray' borderWidth="1px" borderRadius='full' my={2}>
   <Avatar
     src={user.picture}
     size='xs'
