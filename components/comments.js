@@ -6,7 +6,7 @@ export default function Comments({ comments }) {
   <Box p={3} my={4}>
       {comments.map(({ id, createdAt, text, user }) => {
         return (
-
+<>
 <Flex key={id} my={2}>
   <Avatar src={user.picture}
               alt={user.name} />
@@ -22,6 +22,7 @@ export default function Comments({ comments }) {
     <Text fontSize='sm'>{text}</Text>
   </Box>
 </Flex>
+</>
 
         )
       })}
