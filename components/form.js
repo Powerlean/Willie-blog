@@ -33,7 +33,10 @@ export default function Form({ onSubmit, text, textSet }) {
       <Box mt={2} mb={6} colorScheme='gray'>
         {isAuthenticated ? (
 <>
-<Box          mb={3}
+<Button colorScheme='telegram' p={3} borderWidth="1px" rounded="md">
+              Send
+            </Button>
+<Box          mt={3}
 >
 <Tag size='lg' borderWidth="1px" borderRadius='full' my={2}>
   <Avatar
@@ -58,9 +61,6 @@ export default function Form({ onSubmit, text, textSet }) {
          </Button>
 </Box>
 </Box>
-<Button colorScheme='telegram' p={3} borderWidth="1px" rounded="md">
-              Send
-            </Button>
 </>
         ) : (
           <Button
