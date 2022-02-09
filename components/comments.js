@@ -16,6 +16,7 @@ export default function Comments({ comments }) {
       <Badge ml='1' colorScheme='gray' fontSize='xs'>
      {DateTime.fromMillis(createdAt).toRelative()}
       </Badge>
+<Text my={1} fontSize='xs' colorScheme='gray'>
      • Commented
     </Text>
     <Text fontSize='sm'>{text}</Text>
