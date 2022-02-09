@@ -7,8 +7,6 @@ import {getFileBySlug, getFiles} from "../../lib/mdx";
 import distanceToNow from "../../lib/daterelative";
 import { TimeIcon } from "@chakra-ui/icons"
 import Form from '../../components/form'
-import Comments from '../../components/comments'
-import useComment from '../../hooks/useComment'
 
 
 const postanimate = {
@@ -62,7 +60,6 @@ const BlogPost = ({ post }) => {
         />
 
 <Form onSubmit={onSubmit} textSet={textSet} text={text} />
-      <Comments comments={comments} />
       </Layout>
     </Container>
   );
