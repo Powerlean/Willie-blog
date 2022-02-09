@@ -31,7 +31,6 @@ export default function Form({ onSubmit, text, textSet }) {
             <Button colorScheme='teal' mt={2} p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-        <Flex>
         <Box mt={10}
         p={3} 
         borderWidth="1px" 
@@ -52,7 +51,6 @@ export default function Form({ onSubmit, text, textSet }) {
               x LogOut
             </Button>
 </Box>
-          </Flex>
         ) : (
           <Button
             colorScheme='gray'
