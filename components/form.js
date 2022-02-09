@@ -1,5 +1,6 @@
 import { useAuth0 } from '@auth0/auth0-react'
 import {
+  Container,
   Textarea,
   Box,
   Image,
@@ -18,7 +19,7 @@ export default function Form({ onSubmit, text, textSet }) {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
 
   return (
-    <Box mt={10}>
+    <Container mt={10}>
     <FormControl p={3} onSubmit={onSubmit}>
       <Textarea
         rows="2"
@@ -32,7 +33,7 @@ export default function Form({ onSubmit, text, textSet }) {
 
       <Box mt={2} mb={6} colorScheme='gray'>
         {isAuthenticated ? (
-<>
+
 <Button colorScheme='telegram' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
@@ -61,7 +62,7 @@ export default function Form({ onSubmit, text, textSet }) {
          </Button>
 </Box>
 </Box>
-</>
+
         ) : (
           <Button
             p={1} 
@@ -75,6 +76,6 @@ export default function Form({ onSubmit, text, textSet }) {
         )}
       </Box>
     </FormControl>
-</Box>
+</Container>
   )
 }
