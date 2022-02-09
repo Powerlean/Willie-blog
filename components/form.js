@@ -67,8 +67,7 @@ export default function Form({ onSubmit, text, textSet }) {
 </>
         ) : (
           <Button
-            colorScheme='gray'
-            p={3} 
+            p={1} 
             borderWidth="1px" 
             rounded="md"
             typeof="button"
