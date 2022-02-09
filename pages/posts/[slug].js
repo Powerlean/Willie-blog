@@ -6,8 +6,6 @@ import MDXComponents from "../../components/MDXComponents";
 import {getFileBySlug, getFiles} from "../../lib/mdx";
 import distanceToNow from "../../lib/daterelative";
 import { TimeIcon } from "@chakra-ui/icons"
-import Form from '../../components/form'
-
 
 const postanimate = {
   hidden: { opacity: 0 },
