@@ -38,9 +38,10 @@ export default function Form({ onSubmit, text, textSet }) {
               rounded="md" >
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
             <Code mb={2} mt={3} rounded='md'>{user.name}</Code>
+<FormHelperText my={3}>Please wait it</FormHelperText>
             <Button
               fontSize='sm'
-              mt={5}
+              mt={10}
               p={1}
               borderWidth="1px" 
               rounded="md"
