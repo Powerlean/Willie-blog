@@ -26,20 +26,21 @@ export default function Form({ onSubmit, text, textSet }) {
         value={text}
       />
 
-      <Box mt={3} mb={6}>
+      <Box mt={2} mb={6}>
         {isAuthenticated ? (
 <>
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-<Box          mt={10}
+<Box          mt={2}
               p={3}
               borderWidth="1px" 
               rounded="md" >
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
             <Code my={2} rounded='md'>{user.name}</Code>
             <Button
-              mt={1}
+
+              mt={5}
               p={1}
               borderWidth="1px" 
               rounded="md"
