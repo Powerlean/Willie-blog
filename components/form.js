@@ -1,65 +1,29 @@
-import { useAuth0 } from '@auth0/auth0-react'
-import {
-  Textarea,
-  Box,
-  Image,
-  Button,
-  FormHelperText,
-  FormControl,
-  Flex,
-  Code,
-  Tag,
-  Avatar,
-  TagLabel
-} from '@chakra-ui/react';
+import { DateTime } from 'luxon'
 
-
-export default function Form({ onSubmit, text, textSet }) {
-  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
-
+export default function Comments({ comments }) {
   return (
-    <Box mt={10}>
-    <FormControl p={3} onSubmit={onSubmit}>
-      <Textarea
-        rows="2"
-        p={3} 
-        borderWidth="1px" 
-        rounded="md"
-        onChange={(e) => textSet(e.target.value)}
-        value={text}
-        placeholder='Comment here!'
-      />
-
-      <Box mt={2} mb={6} colorScheme='gray'>
-        {isAuthenticated ? (
-<div className="flex items-center space-x-2">
-            <button className="bg-blue-600 text-white px-2 py-1 rounded">
-              Send
-            </button>
-            <img src={user.picture} width={30} className="rounded-full" />
-            <span>{user.name}</span>
-            <button
-              typeof="button"
-              onClick={() =>
-                logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
-              }
-            >
-              x
-            </button>
+    <div className="mt-10 space-y-4">
+      {comments.map(({ id, createdAt, text, user }) => {
+        return (
+          <div key={id} className="flex items-center space-x-2">
+            <img
+              src={user.picture}
+              alt={user.name}
+              width={40}
+              className="rounded-full"
+            />
+            <div>
+              <div className="space-x-2">
+                <b>{user.name}</b>
+                <time className="text-gray-400">
+                  {DateTime.fromMillis(createdAt).toRelative()}
+                </time>
+              </div>
+              <p>{text}</p>
+            </div>
           </div>
-        ) : (
-          <Button
-            p={1} 
-            borderWidth="1px" 
-            rounded="md"
-            typeof="button"
-            onClick={() => loginWithRedirect()}
-          >
-            Login
-          </Button>
-        )}
-      </Box>
-    </FormControl>
-</Box>
+        )
+      })}
+    </div>
   )
 }
