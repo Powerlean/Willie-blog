@@ -37,7 +37,7 @@ const BlogPost = ({ post }) => {
         <Heading
           fontWeight="normal"
           fontSize="4xl"
-          mt={5}
+          mt={14}
           mb={2}
           fontFamily="inherit"
         >
