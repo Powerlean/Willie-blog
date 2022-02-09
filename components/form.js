@@ -33,36 +33,21 @@ export default function Form({ onSubmit, text, textSet }) {
 
       <Box mt={2} mb={6} colorScheme='gray'>
         {isAuthenticated ? (
-<>
-<Box          mb={3}
->
-<Tag size='lg' borderWidth="1px" borderRadius='full' my={2}>
-  <Avatar
-    src={user.picture}
-    size='xs'
-    name='Avatar'
-    ml={-1}
-    mr={2}
-  />
-  <TagLabel>{user.name}</TagLabel>
-</Tag>
-<Box>
-            <Button
-              fontSize='sm'
-              my={2}
+<div className="flex items-center space-x-2">
+            <button className="bg-blue-600 text-white px-2 py-1 rounded">
+              Send
+            </button>
+            <img src={user.picture} width={30} className="rounded-full" />
+            <span>{user.name}</span>
+            <button
               typeof="button"
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
               }
             >
-              x Logout
-         </Button>
-</Box>
-<Button colorScheme='telegram' p={3} borderWidth="1px" rounded="md">
-              Send
-            </Button>
-</Box>
-</>
+              x
+            </button>
+          </div>
         ) : (
           <Button
             p={1} 
