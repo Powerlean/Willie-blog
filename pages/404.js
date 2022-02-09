@@ -11,8 +11,8 @@ import {
 const NotFound = () => {
   return (
     <Container>
-      <Box align="center">
-        <Heading as="h1" mt={20}>
+      <Box align="center" mt={10}>
+        <Heading as="h1" mt={4}>
           Not found
         </Heading>
         <Text> 404 </Text>
