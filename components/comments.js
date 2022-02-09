@@ -1,29 +1,29 @@
 import { DateTime } from 'luxon'
+import { Box, Flex, Image } from '@chakra-ui/react'
 
 export default function Comments({ comments }) {
   return (
-    <div className="mt-10 space-y-4">
+  <Box p={3} my={4}>
       {comments.map(({ id, createdAt, text, user }) => {
         return (
-          <div key={id} className="flex items-center space-x-2">
-            <img
-              src={user.picture}
-              alt={user.name}
-              width={40}
-              className="rounded-full"
-            />
-            <div>
-              <div className="space-x-2">
-                <b>{user.name}</b>
-                <time className="text-gray-400">
-                  {DateTime.fromMillis(createdAt).toRelative()}
-                </time>
-              </div>
-              <p>{text}</p>
-            </div>
-          </div>
+
+<Flex key={id} my={2}>
+  <Avatar src={user.picture}
+              alt={user.name} />
+  <Box ml='3'>
+    <Text fontWeight='bold'>
+      {user.name}
+      <Badge ml='1' colorScheme='gray' fontSize='xs'>
+     {DateTime.fromMillis(createdAt).toRelative()}
+      </Badge>
+     • Commented
+    </Text>
+    <Text fontSize='sm'>{text}</Text>
+  </Box>
+</Flex>
+
         )
       })}
-    </div>
+    </Box>
   )
 }
