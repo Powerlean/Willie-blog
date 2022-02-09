@@ -28,7 +28,7 @@ const Blog = ({ posts }) => {
   return (
     <Container>
       <Box mt={10} mb={6} p={5}>
-        <Heading fontSize="3xl" fontFamily="inherit" fontWeight="normal" color={useColorModeValue('gray.600','gray.300')} mb={4}>
+        <Heading fontSize="3xl" fontFamily="inherit" fontWeight="normal" color={useColorModeValue('gray.600','gray.300')} mb={4} mt={4}>
           PostList
         </Heading>
 
