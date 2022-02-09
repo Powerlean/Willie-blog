@@ -27,6 +27,7 @@ export default function Form({ onSubmit, text, textSet }) {
 
       <Box mt={3} mb={6}>
         {isAuthenticated ? (
+<>
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
@@ -46,7 +47,7 @@ export default function Form({ onSubmit, text, textSet }) {
               x
          </Button>
 </Box>
-
+</>
         ) : (
           <Button
             colorScheme='gray'
