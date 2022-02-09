@@ -28,11 +28,11 @@ export default function Form({ onSubmit, text, textSet }) {
 
       <Box mt={1} mb={6}>
         {isAuthenticated ? (
-          
+        <Flex>  
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-<Flex>
+
         <Box mt={10}
         p={3} 
         borderWidth="1px" 
