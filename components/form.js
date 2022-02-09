@@ -33,8 +33,7 @@ export default function Form({ onSubmit, text, textSet }) {
       <Box mt={2} mb={6} colorScheme='gray'>
         {isAuthenticated ? (
 <>
-<Box          mb={2}
-              p={3}
+<Box          mb={3}
 >
 <Tag size='lg' borderWidth="1px" borderRadius='full' my={2}>
   <Avatar
