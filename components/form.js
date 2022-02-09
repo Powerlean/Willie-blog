@@ -7,8 +7,8 @@ import {
   FormHelperText,
   FormControl,
   Flex,
-  Code
 } from '@chakra-ui/react';
+
 
 export default function Form({ onSubmit, text, textSet }) {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
@@ -23,37 +23,30 @@ export default function Form({ onSubmit, text, textSet }) {
         rounded="md"
         onChange={(e) => textSet(e.target.value)}
         value={text}
-        placeholder='Here is a comment' 
       />
 
-      <Box mt={1} mb={6}>
+      <Box mt={3} mb={6}>
         {isAuthenticated ? (
-        <Flex>  
+          <Flex align="center" >
             <Button colorScheme='teal' p={3} borderWidth="1px" rounded="md">
               Send
             </Button>
-
-        <Box mt={10}
-        p={3} 
-        borderWidth="1px" 
-        rounded="md">
+<Box mt={10}>
             <Image src={user.picture} alt="logo" width="30px" my={3} mr={5} rounded="full" />
-            <Code mt={2}>{user.name}</Code>
-
+            <span ml={5}>{user.name}</span>
+</Box>
             <Button
-              colorScheme="gray"
-              p={3} 
+              colorScheme="red"
+              p="1px" 
               borderWidth="1px" 
-              rounded="md"
+              rounded="full"
               typeof="button"
-              mt={2}
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
               }
             >
-              x LogOut
+              x
             </Button>
-</Box>
           </Flex>
         ) : (
           <Button
