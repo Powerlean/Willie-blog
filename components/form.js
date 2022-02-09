@@ -45,13 +45,10 @@ export default function Form({ onSubmit, text, textSet }) {
   />
   <TagLabel>{user.name}</TagLabel>
 </Tag>
-
+<Box>
             <Button
               fontSize='sm'
-              mt={2}
-              p={1}
-              borderWidth="1px" 
-              rounded="md"
+              my={2}
               typeof="button"
               onClick={() =>
                 logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
@@ -59,6 +56,7 @@ export default function Form({ onSubmit, text, textSet }) {
             >
               x Logout
          </Button>
+</Box>
 </Box>
 <Button colorScheme='telegram' p={3} borderWidth="1px" rounded="md">
               Send
