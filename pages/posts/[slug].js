@@ -30,7 +30,7 @@ const BlogPost = ({ post }) => {
   return (
     <Container mt={4} mb={100} maxWidth={"container.md"}>
       <Head>
-        <title>{=metaData.title}</title>
+        <title>{metaData.title}</title>
         <meta name="description" content={metaData.content} />
       </Head>
       <Layout>
