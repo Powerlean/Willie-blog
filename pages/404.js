@@ -11,11 +11,11 @@ import {
 const NotFound = () => {
   return (
     <Container>
-      <Box align="center" mt={10}>
-        <Heading as="h1" mt={4}>
+      <Box align="center" mt={4}>
+        <Heading as="h1" mt={10}>
           Not found
         </Heading>
-        <Text> 404 </Text>
+        <Text my={5}> 404 </Text>
         <Divider my={6} />
       </Box>
       <Box my={6} align="center">
