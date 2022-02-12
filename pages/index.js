@@ -18,7 +18,6 @@ import {
   AccordionButton,
   AccordionPanel,
   Divider,
-  Link
 } from "@chakra-ui/react";
 import { AccordionIcon } from "@chalra-ui/icons";
 import { TiSocialGithub } from "react-icons/ti";
