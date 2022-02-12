@@ -12,8 +12,16 @@ import {
   UnorderedList,
   ListItem,
   useColorModeValue,
-  Image
+  Image,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  Divider,
+  Link
 } from "@chakra-ui/react";
+import { AccordionIcon } from "@chalra-ui/icons";
+import { TiSocialGithub } from "react-icons/ti";
 
 const Home = () => (
   <Container>
@@ -34,6 +42,25 @@ const Home = () => (
       <Text fontSize="md" mb={3}>
         This site created on <Code> Jan 20 </Code>, focus on English content
       </Text>
+
+<Divider />
+          <Accordion>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box flex='1' textAlign='left'>
+          Contact me
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <Link href="https://github.com/xuwillie" isExternal>
+      <TiSocialGithub />
+      </Link>
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
     </Box>
 
     <Box
