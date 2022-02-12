@@ -18,10 +18,11 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Divider,
-  Icon
+  Icon,
+  Heading
 } from "@chakra-ui/react";
 import { TiSocialGithub } from "react-icons/ti";
+import { SiTelegram } from "react-icons/si";
 
 const Home = () => (
   <Container>
@@ -43,8 +44,7 @@ const Home = () => (
         This site created on <Code> Jan 20 </Code>, focus on English content
       </Text>
 
-<Divider />
-          <Accordion defaultIndex={[0]} allowMultiple>
+          <Accordion allowMultiple>
   <AccordionItem>
     <h2>
       <AccordionButton>
@@ -57,6 +57,9 @@ const Home = () => (
     <AccordionPanel pb={4}>
     <Link href="https://github.com/xuwillie" isExternal>
       <Icon as={TiSocialGithub} w={8} h={8}/>
+      </Link>
+    <Link href="https://t.me/williexu" isExternal>
+      <Icon as={SiTelegram} w={8} h={8}/>
       </Link>
     </AccordionPanel>
   </AccordionItem>
