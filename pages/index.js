@@ -12,7 +12,6 @@ import {
   UnorderedList,
   ListItem,
   useColorModeValue,
-  Image,
   Accordion,
   AccordionItem,
   AccordionButton,
@@ -28,7 +27,6 @@ const Home = () => (
       <Badge mt={4} mb={5}>
         About me
       </Badge>
-<Image src="/images/stars.svg" alt="star" objectFit="cover" height={56}/>
       <Stat mt={3} mb={5}>
         <StatLabel>Who am I</StatLabel>
         <StatNumber>Willie Xu</StatNumber>
