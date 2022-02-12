@@ -56,7 +56,7 @@ const Home = () => (
     </h2>
     <AccordionPanel pb={4}>
     <Link href="https://github.com/xuwillie" isExternal>
-      <Icon as={TiSocialGithub} />
+      <Icon as={TiSocialGithub} w={8} h={8}/>
       </Link>
     </AccordionPanel>
   </AccordionItem>
