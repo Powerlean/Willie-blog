@@ -69,7 +69,7 @@ const Home = () => (
       </Badge>
       <UnorderedList>
         <ListItem mt={3}>
-          <Link href="https://pcoo.me" isExternal>
+          <Link href="https://www.snn.moe" isExternal>
             Powerlean
           </Link>
         </ListItem>
