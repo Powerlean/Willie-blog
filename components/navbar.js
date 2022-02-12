@@ -120,6 +120,7 @@ const Navbar = (props) => {
                 <NextLink
                   href="https://github.com/7ity/homepage"
                   _target="_blank"
+                  isExternal
                 >
                   <MenuItem as={Link}>Source</MenuItem>
                 </NextLink>
