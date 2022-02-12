@@ -58,7 +58,7 @@ const Home = () => (
     </Heading>
     <AccordionPanel pb={4}>
     <Link href="https://github.com/xuwillie" isExternal>
-      <Icon as={TiSocialGithub} w={8} h={8}/>
+      <Icon as={FaGithubAlt} w={8} h={8}/>
       </Link>
     <Link href="https://t.me/williexu" isExternal>
       <Icon as={FaTelegram} w={8} h={8}/>
