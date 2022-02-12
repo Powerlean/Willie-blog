@@ -21,7 +21,7 @@ const Home = () => (
       <Badge mt={4} mb={5}>
         About me
       </Badge>
-<Image src="/images/stars.svg" alt="star" />
+<Image src="/images/stars.svg" alt="star" objectFit="cover" z-index={0} filter="blur(16px)" transform="scale(1.1, 1.1)" />
       <Stat mt={3} mb={5}>
         <StatLabel>Who am I</StatLabel>
         <StatNumber>Willie Xu</StatNumber>
