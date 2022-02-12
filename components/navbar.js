@@ -82,6 +82,9 @@ const Navbar = (props) => {
           <LinkItem href="/lab" path={path}>
             Lab
           </LinkItem>
+          <LinkItem href="/friends" path={path}>
+            Friends
+          </LinkItem>
           <LinkItem
             _target="_blank"
             href="https://github.com/7ity/homepage"
@@ -116,6 +119,13 @@ const Navbar = (props) => {
                 </NextLink>
                 <NextLink href="/lab" passHref>
                   <MenuItem as={Link}>Lab</MenuItem>
+                </NextLink>
+                <NextLink
+                  href="/friends"
+                  _target="_blank"
+                 passHref
+                >
+                  <MenuItem as={Link}>Friends</MenuItem>
                 </NextLink>
                 <NextLink
                   href="https://github.com/7ity/homepage"
