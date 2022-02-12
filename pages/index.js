@@ -21,9 +21,7 @@ import {
   Icon,
   Heading
 } from "@chakra-ui/react";
-import { TiSocialGithub } from "react-icons/ti";
-import { SiTelegram } from "react-icons/si";
-
+import { FaGithubAlt, FaTelegram } from "react-icons/fa";
 const Home = () => (
   <Container>
     <Box mt={10} mb={6} p={6}>
@@ -48,9 +46,7 @@ const Home = () => (
   <AccordionItem>
           <Heading
           fontWeight="normal"
-          fontSize="xl"
-          mt={14}
-          mb={2}
+          fontSize="2xl"
           fontFamily="inherit"
         >
       <AccordionButton>
@@ -65,7 +61,7 @@ const Home = () => (
       <Icon as={TiSocialGithub} w={8} h={8}/>
       </Link>
     <Link href="https://t.me/williexu" isExternal>
-      <Icon as={SiTelegram} w={8} h={8}/>
+      <Icon as={FaTelegram} w={8} h={8}/>
       </Link>
     </AccordionPanel>
   </AccordionItem>
