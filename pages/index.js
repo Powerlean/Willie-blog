@@ -46,14 +46,20 @@ const Home = () => (
 
           <Accordion allowMultiple>
   <AccordionItem>
-    <h2>
+          <Heading
+          fontWeight="normal"
+          fontSize="xl"
+          mt={14}
+          mb={2}
+          fontFamily="inherit"
+        >
       <AccordionButton>
         <Box flex='1' textAlign='left'>
           Contact me
         </Box>
         <AccordionIcon />
       </AccordionButton>
-    </h2>
+    </Heading>
     <AccordionPanel pb={4}>
     <Link href="https://github.com/xuwillie" isExternal>
       <Icon as={TiSocialGithub} w={8} h={8}/>
