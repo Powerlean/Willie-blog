@@ -19,6 +19,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Divider,
+  Icon
 } from "@chakra-ui/react";
 import { TiSocialGithub } from "react-icons/ti";
 
@@ -55,7 +56,7 @@ const Home = () => (
     </h2>
     <AccordionPanel pb={4}>
     <Link href="https://github.com/xuwillie" isExternal>
-      <TiSocialGithub />
+      <Icon as={TiSocialGithub} />
       </Link>
     </AccordionPanel>
   </AccordionItem>
