@@ -17,9 +17,9 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
+  AccordionIcon,
   Divider,
 } from "@chakra-ui/react";
-import { AccordionIcon } from "@chakra-ui/icons";
 import { TiSocialGithub } from "react-icons/ti";
 
 const Home = () => (
