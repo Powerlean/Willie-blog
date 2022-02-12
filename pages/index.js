@@ -12,6 +12,7 @@ import {
   UnorderedList,
   ListItem,
   useColorModeValue,
+  Image
 } from "@chakra-ui/react";
 
 const Home = () => (
@@ -20,6 +21,7 @@ const Home = () => (
       <Badge mt={4} mb={5}>
         About me
       </Badge>
+<Image src="/images/stars.svg" alt="star" />
       <Stat mt={3} mb={5}>
         <StatLabel>Who am I</StatLabel>
         <StatNumber>Willie Xu</StatNumber>
