@@ -44,7 +44,7 @@ const Home = () => (
       </Text>
 
 <Divider />
-          <Accordion>
+          <Accordion defaultIndex={[0]} allowMultiple>
   <AccordionItem>
     <h2>
       <AccordionButton>
