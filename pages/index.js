@@ -58,10 +58,10 @@ const Home = () => (
     </Heading>
     <AccordionPanel pb={4}>
     <Link href="https://github.com/xuwillie" isExternal>
-      <Icon as={FaGithubAlt} w={8} h={8} borderWidth={2} p="2px" color="gray.400" mr={3}/>
+      <Icon as={FaGithubAlt} w={8} h={8} borderWidth={2} p="2px" borderRadius="full" color="gray.400" mr={3}/>
       </Link>
     <Link href="https://t.me/williexu" isExternal>
-      <Icon as={FaTelegram}  w={8} h={8} borderWidth={2} p="2px" color="telegram.300"/>
+      <Icon as={FaTelegram}  w={8} h={8} borderWidth={2} p="2px" borderRadius="full" color="telegram.300"/>
       </Link>
     </AccordionPanel>
   </AccordionItem>
