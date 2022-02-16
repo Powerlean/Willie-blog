@@ -216,7 +216,7 @@ const MDXComponents = {
   p: (props) => (
       <Text
           fontFamily="'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-          fontWeight="300"
+          fontWeight="400"
           mt={2}
           mb={4}
           lineHeight={1.5}
