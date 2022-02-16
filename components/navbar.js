@@ -14,6 +14,7 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
+  Button
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
@@ -112,27 +113,28 @@ const Navbar = (props) => {
               />
               <MenuList bg={useColorModeValue("whiteAlpha.900", "#2d2d2d")}>
                 <NextLink href="/" passHref>
+<Button rounded="md">
                   <MenuItem as={Link}>About</MenuItem>
+</Button>
                 </NextLink>
                 <NextLink href="/posts" passHref>
+<Button rounded="md">
                   <MenuItem as={Link}>Post</MenuItem>
+</Button>
                 </NextLink>
                 <NextLink href="/lab" passHref>
+<Button rounded="md">
                   <MenuItem as={Link}>Lab</MenuItem>
-                </NextLink>
-                <NextLink
-                  href="/friends"
-                  _target="_blank"
-                 passHref
-                >
-                  <MenuItem as={Link}>Friends</MenuItem>
+</Button>
                 </NextLink>
                 <NextLink
                   href="https://github.com/7ity/homepage"
                   _target="_blank"
                   isExternal
                 >
+<Button rounded="md">
                   <MenuItem as={Link}>Source</MenuItem>
+</Button>
                 </NextLink>
               </MenuList>
             </Menu>
