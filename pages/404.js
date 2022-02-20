@@ -19,7 +19,7 @@ const NotFound = () => {
         <Divider my={6} />
       </Box>
       <Box my={6} align="center">
-        <NextLink href="/">
+        <NextLink href="/" passHref>
           <Button colorScheme="gray">Return to Home</Button>
         </NextLink>
       </Box>
