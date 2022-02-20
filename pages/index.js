@@ -155,8 +155,8 @@ Python
       </Badge>
       <UnorderedList>
         <ListItem mt={3}>
-          <Link href="https://www.snn.moe" isExternal>
-            Powerlean
+          <Link href="https://snn.moe" isExternal>
+            SUNN
           </Link>
         </ListItem>
         <ListItem mt={3}>
