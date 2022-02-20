@@ -29,6 +29,7 @@ import {
   TagRightIcon,
   Image
 } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { FaGithubAlt, FaTelegram, FaHeartbeat } from "react-icons/fa";
 import { AiOutlineAndroid } from "react-icons/ai";
 import { SiArchlinux, SiFreebsd } from "react-icons/si"
@@ -133,7 +134,7 @@ Python
 </UnorderedList>
     </TabPanel>
 <TabPanel>
- <Tag size="md" variant='outline' colorScheme='red' my={3}>
+ <Tag size="md" variant='outline' colorScheme='blue' my={3}>
       <TagLabel>Kano</TagLabel>
       <TagRightIcon as={FaHeartbeat} />
     </Tag>
@@ -147,7 +148,7 @@ Python
       mt={10}
       mb={6}
       p={6}
-      bg={useColorModeValue("#edf2f780", "#2d2d2d")}
+      bg={useColorModeValue("gray.50", "#2d2d2d")}
       borderRadius="lg"
     >
       <Badge mt={4} mb={7} colorScheme="telegram">
@@ -157,21 +158,25 @@ Python
         <ListItem mt={3}>
           <Link href="https://snn.moe" isExternal>
             SUNN
+<ExternalLinkIcon mx='2px' />
           </Link>
         </ListItem>
         <ListItem mt={3}>
           <Link href="https://anillc.cn" isExternal>
             Anillc
+<ExternalLinkIcon mx='2px' />
           </Link>
         </ListItem>
         <ListItem mt={3}>
           <Link href="https://www.chinq.xyz" isExternal>
             CHINQ
+<ExternalLinkIcon mx='2px' />
           </Link>
         </ListItem>
         <ListItem mt={3}>
           <Link href="https://ncdwlq.space" isExternal>
             NCDWLQ
+<ExternalLinkIcon mx='2px' />
           </Link>
         </ListItem>
       </UnorderedList>
