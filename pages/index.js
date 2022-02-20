@@ -27,7 +27,8 @@ import {
   Tag,
   TagLabel,
   TagRightIcon,
-  Image
+  Image,
+  Divider
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { FaGithubAlt, FaTelegram, FaHeartbeat } from "react-icons/fa";
@@ -93,6 +94,7 @@ const Home = () => (
     <Tab>Languages</Tab>
     <Tab>Singer</Tab>
   </TabList>
+<Divider />
   <TabPanels>
     <TabPanel>
       <Tag size="md" variant='outline' colorScheme='blue' my={3} mr={2}>
