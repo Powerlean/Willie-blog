@@ -137,7 +137,7 @@ Python
       <TagLabel>Kano</TagLabel>
       <TagRightIcon as={FaHeartbeat} />
     </Tag>
-<Image src='/images/kano.png' alt="logo" rounded="md" my={2} />
+<Image src='/images/kano-1.png' alt="logo" rounded="md" my={2} />
     </TabPanel>
   </TabPanels>
 </Tabs>
