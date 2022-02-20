@@ -29,7 +29,7 @@ import {
   TagRightIcon,
   Image
 } from "@chakra-ui/react";
-import { FaGithubAlt, FaTelegram } from "react-icons/fa";
+import { FaGithubAlt, FaTelegram, FaHeartbeat } from "react-icons/fa";
 import { AiOutlineAndroid } from "react-icons/ai";
 import { SiArchlinux, SiFreebsd } from "react-icons/si"
 
@@ -99,11 +99,11 @@ const Home = () => (
       <TagRightIcon as={AiOutlineAndroid} />
     </Tag>
 <Tag size="md" variant='outline' colorScheme='blue' my={3} mr={2}>
-      <TagLabel>Android</TagLabel>
+      <TagLabel>ArchLinux</TagLabel>
       <TagRightIcon as={SiArchlinux} />
     </Tag>
 <Tag size="md" variant='outline' colorScheme='blue' my={3} mr={2}>
-      <TagLabel>Android</TagLabel>
+      <TagLabel>FreeBSD</TagLabel>
       <TagRightIcon as={SiFreebsd} />
     </Tag>
 
@@ -133,8 +133,11 @@ Python
 </UnorderedList>
     </TabPanel>
 <TabPanel>
- <Code colorScheme='red' children="ღKano!" />
-<Image src='/images/kano.png' alt="logo" rounded="md" my={4} />
+ <Tag size="md" variant='outline' colorScheme='blue' my={3}>
+      <TagLabel>Kano</TagLabel>
+      <TagRightIcon as={FaHeartbeat} />
+    </Tag>
+<Image src='/images/kano.png' alt="logo" rounded="md" my={2} />
     </TabPanel>
   </TabPanels>
 </Tabs>
