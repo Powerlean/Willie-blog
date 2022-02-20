@@ -26,10 +26,12 @@ import {
   TabPanels,
   Tag,
   TagLabel,
-  TagRightIcon
+  TagRightIcon,
+  Image
 } from "@chakra-ui/react";
 import { FaGithubAlt, FaTelegram } from "react-icons/fa";
-import { AiOutlineAndroid } from "react-icons/ai"
+import { AiOutlineAndroid } from "react-icons/ai";
+import { SiArchlinux, SiFreebsd } from "react-icons/si"
 
 const Home = () => (
   <Container>
@@ -96,12 +98,43 @@ const Home = () => (
       <TagLabel>Android</TagLabel>
       <TagRightIcon as={AiOutlineAndroid} />
     </Tag>
+<Tag size="md" variant='outline' colorScheme='blue' my={3} mr={2}>
+      <TagLabel>Android</TagLabel>
+      <TagRightIcon as={SiArchlinux} />
+    </Tag>
+<Tag size="md" variant='outline' colorScheme='blue' my={3} mr={2}>
+      <TagLabel>Android</TagLabel>
+      <TagRightIcon as={SiFreebsd} />
+    </Tag>
+
     </TabPanel>
     <TabPanel>
-      <Text>two!</Text>
+      <UnorderedList>
+        <ListItem mt={3}>
+          <Code>
+Javascript
+          </Code>
+        </ListItem>
+<ListItem mt={3}>
+          <Code>
+CoffeeScript
+          </Code>
+</ListItem>
+<ListItem mt={3}>
+          <Code>
+React
+          </Code>
+</ListItem>
+<ListItem mt={3}>
+          <Code>
+Python
+          </Code>
+        </ListItem>
+</UnorderedList>
     </TabPanel>
 <TabPanel>
-      <Text>Three!</Text>
+ <Code colorScheme='red' children="ღKano!" />
+<Image src='/images/kano.png' alt="logo" rounded="md" my={4} />
     </TabPanel>
   </TabPanels>
 </Tabs>
