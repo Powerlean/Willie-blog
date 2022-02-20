@@ -14,6 +14,7 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
+  MenuDivider
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
@@ -111,6 +112,14 @@ const Navbar = (props) => {
                 </NextLink>
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Post</MenuItem>
+                </NextLink>
+<MenuDivider />
+                <NextLink
+                  href="https://github.com/williexu/willie-blog"
+                  _target="_blank"
+                  isExternal
+                >
+                  <MenuItem as={Link}>Source</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
