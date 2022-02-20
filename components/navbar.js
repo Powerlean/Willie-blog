@@ -80,9 +80,6 @@ const Navbar = (props) => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem href="/lab" path={path}>
-            Lab
-          </LinkItem>
           
           <LinkItem
             _target="_blank"
@@ -115,18 +112,6 @@ const Navbar = (props) => {
                 </NextLink>
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Post</MenuItem>
-                </NextLink>
-                <NextLink href="/lab" passHref>
-                  <MenuItem as={Link}>Lab</MenuItem>
-                </NextLink>
-               
-<MenuDivider />
-                <NextLink
-                  href="https://github.com/williexu/willie-blog"
-                  _target="_blank"
-                  isExternal
-                >
-                  <MenuItem as={Link}>Source</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
