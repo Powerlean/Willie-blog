@@ -114,13 +114,7 @@ const Navbar = (props) => {
                   <MenuItem as={Link}>Post</MenuItem>
                 </NextLink>
 <MenuDivider />
-                <NextLink
-                  href="https://github.com/williexu/willie-blog"
-                  _target="_blank"
-                  isExternal
-                >
-                  <MenuItem as={Link}>Source</MenuItem>
-                </NextLink>
+                  <MenuItem href="https://github.com/williexu/willie-blog" as={Link}>Source</MenuItem>    
               </MenuList>
             </Menu>
           </Box>
