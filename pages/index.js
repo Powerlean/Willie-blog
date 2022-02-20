@@ -27,8 +27,7 @@ import {
   Tag,
   TagLabel,
   TagRightIcon,
-  Image,
-  Divider
+  Image
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { FaGithubAlt, FaTelegram, FaHeartbeat } from "react-icons/fa";
@@ -79,7 +78,6 @@ const Home = () => (
   </AccordionItem>
 </Accordion>
     </Box>
-<Divider />
     <Box
       mt={10}
       mb={6}
@@ -144,7 +142,6 @@ Python
   </TabPanels>
 </Tabs>
     </Box>
-<Divider />
     <Box
       mt={10}
       mb={6}
@@ -152,7 +149,7 @@ Python
       bg={useColorModeValue("gray.50", "#2d2d2d")}
       borderRadius="lg"
     >
-      <Badge mt={4} mb={7} colorScheme="telegram">
+      <Badge mt={4} mb={7} colorScheme="cyan">
         My friends
       </Badge>
       <UnorderedList>
