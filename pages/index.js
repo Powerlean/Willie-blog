@@ -150,7 +150,7 @@ Python
       bg={useColorModeValue("#edf2f780", "#2d2d2d")}
       borderRadius="lg"
     >
-      <Badge mt={4} mb={7}>
+      <Badge mt={4} mb={7} colorScheme="telegram">
         My friends
       </Badge>
       <UnorderedList>
