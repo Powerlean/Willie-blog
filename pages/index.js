@@ -22,8 +22,11 @@ import {
   Tab,
   Tabs,
   TabList,
-  TabPlanel,
-  TabPlanels
+  TabPanel,
+  TabPanels,
+  Tag,
+  TagLabel,
+  TagRightIcon
 } from "@chakra-ui/react";
 import { FaGithubAlt, FaTelegram } from "react-icons/fa";
 import { AiOutlineAndroid } from "react-icons/ai"
@@ -89,7 +92,7 @@ const Home = () => (
   </TabList>
   <TabPanels>
     <TabPanel>
-      <Tag size="md" variant='outline' colorScheme='blue' my={3} mr{2}>
+      <Tag size="md" variant='outline' colorScheme='blue' my={3} mr={2}>
       <TagLabel>Android</TagLabel>
       <TagRightIcon as={AiOutlineAndroid} />
     </Tag>
