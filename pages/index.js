@@ -133,7 +133,7 @@ Python
 </UnorderedList>
     </TabPanel>
 <TabPanel>
- <Tag size="md" variant='outline' colorScheme='blue' my={3}>
+ <Tag size="md" variant='outline' colorScheme='red' my={3}>
       <TagLabel>Kano</TagLabel>
       <TagRightIcon as={FaHeartbeat} />
     </Tag>
