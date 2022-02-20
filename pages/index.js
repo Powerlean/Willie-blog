@@ -18,9 +18,16 @@ import {
   AccordionPanel,
   AccordionIcon,
   Icon,
-  Heading
+  Heading,
+  Tab,
+  Tabs,
+  TabList,
+  TabPlanel,
+  TabPlanels
 } from "@chakra-ui/react";
 import { FaGithubAlt, FaTelegram } from "react-icons/fa";
+import { AiOutlineAndroid } from "react-icons/ai"
+
 const Home = () => (
   <Container>
     <Box mt={10} mb={6} p={6}>
@@ -70,23 +77,31 @@ const Home = () => (
       mt={10}
       mb={6}
       p={6}
-      bg={useColorModeValue("#edf2f780", "#2d2d2d")}
-      borderRadius="lg"
-    >
+      >
       <Badge mt={4} mb={7}>
         What I Like
       </Badge>
-      <UnorderedList>
-        <ListItem mt={3}>Linux, especially Archlinux</ListItem>
-        <ListItem mt={3}>
-          Music, I like <code>We ued to be-Jacoo</code>, the album of{" "}
-          <code>Age of Innocence</code>, single sound 夜明けと蛍
-        </ListItem>
-        <ListItem mt={3}>
-          Coding, I like building website, JavaScript, Shell Script. Try to
-          Python, C++.{" "}
-        </ListItem>
-      </UnorderedList>
+      <Tabs variant='soft-rounded' colorScheme='telegram'>
+  <TabList>
+    <Tab>OS</Tab>
+    <Tab>Languages</Tab>
+    <Tab>Singer</Tab>
+  </TabList>
+  <TabPanels>
+    <TabPanel>
+      <Tag size="md" variant='outline' colorScheme='blue' my={3} mr{2}>
+      <TagLabel>Android</TagLabel>
+      <TagRightIcon as={AiOutlineAndroid} />
+    </Tag>
+    </TabPanel>
+    <TabPanel>
+      <Text>two!</Text>
+    </TabPanel>
+<TabPanel>
+      <Text>Three!</Text>
+    </TabPanel>
+  </TabPanels>
+</Tabs>
     </Box>
 
     <Box
