@@ -79,7 +79,7 @@ const Home = () => (
   </AccordionItem>
 </Accordion>
     </Box>
-
+<Divider />
     <Box
       mt={10}
       mb={6}
@@ -94,7 +94,6 @@ const Home = () => (
     <Tab>Languages</Tab>
     <Tab>Singer</Tab>
   </TabList>
-<Divider />
   <TabPanels>
     <TabPanel>
       <Tag size="md" variant='outline' colorScheme='blue' my={3} mr={2}>
@@ -145,7 +144,7 @@ Python
   </TabPanels>
 </Tabs>
     </Box>
-
+<Divider />
     <Box
       mt={10}
       mb={6}
