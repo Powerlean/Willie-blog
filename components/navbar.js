@@ -114,7 +114,7 @@ const Navbar = (props) => {
                   <MenuItem as={Link}>Post</MenuItem>
                 </NextLink>
 <MenuDivider />
-                  <MenuItem href="https://github.com/williexu/willie-blog" as={Link}>Source</MenuItem>    
+                  <MenuItem href="https://github.com/xuwillie/willie-blog" as={Link}>Source</MenuItem>    
               </MenuList>
             </Menu>
           </Box>
