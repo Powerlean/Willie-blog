@@ -14,9 +14,10 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
+useDisclosure,
   MenuDivider
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from "./theme-toggle-button";
 import { IoLogoGithub } from "react-icons/io5";
 
@@ -42,6 +43,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 };
 
 const Navbar = (props) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const { path } = props;
   return (
     <Box
@@ -100,11 +102,12 @@ const Navbar = (props) => {
             <Menu isLazy>
               <MenuButton
                 as={IconButton}
-                icon={<HamburgerIcon />}
+                icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
                 _focus={{ boxShadow: "0" }}
                 borderRadius="lg"
+                onClick={isOpen ? onClose : onOpen}
               />
               <MenuList bg={useColorModeValue("whiteAlpha.900", "#2d2d2d")}>
                 <NextLink href="/" passHref>
