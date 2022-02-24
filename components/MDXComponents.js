@@ -1,4 +1,5 @@
 import {
+  Circle, Flex, HStack,
   Alert,
   Box,
   chakra,
@@ -14,6 +15,8 @@ import NextLink from "next/link";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import darkTheme from "prism-react-renderer/themes/nightOwl";
 import lightTheme from "prism-react-renderer/themes/nightOwlLight";
+import * as React from 'react'
+import { QuoteIcon } from './QuoteIcon'
 
 const ChakraHighlight = chakra(Highlight, {
   shouldForwardProp: (prop) =>
@@ -47,29 +50,24 @@ const CustomLink = (props) => {
 
 
 const Quote = (props) => {
-  const { colorMode } = useColorMode();
-  const bgColor = {
-    light: "gray.100",
-    dark: "#2d2d2d",
-  };
-
-  return (
-      <Alert
-          mt={4}
-          w="98%"
-          bg={bgColor[colorMode]}
-          borderLeftColor="gray.400"
-          variant="left-accent"
-          status="info"
-          css={{
-            "> *:first-of-type": {
-              marginTop: 0,
-              marginLeft: 8,
-            },
-          }}
+  <Box as="section" bg={useColorModeValue('gray.50', 'gray.800')}>
+    <Box maxW="3xl" mx="auto" px={{ base: '6', md: '8' }} pt="12" pb="16">
+      <Flex direction="column" align="center" textAlign="center">
+        <QuoteIcon
+          color={useColorModeValue('gray.300', 'gray.600')}
+          fontSize={{ base: '3xl', md: '6xl' }}
+        />
+        <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="medium" mt="6">
           {...props}
-      />
-  );
+</Text>
+        
+      </Flex>
+      <HStack justify="center" spacing="4" mt="3" color={useColorModeValue('gray.300', 'gray.600')}>
+        <Circle size="2" bg="currentColor" />
+        <Circle size="2" bg="currentColor" />
+      </HStack>
+    </Box>
+  </Box>
 };
 
 const Hr = () => {
