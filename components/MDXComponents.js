@@ -14,7 +14,6 @@ import NextLink from "next/link";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import darkTheme from "prism-react-renderer/themes/nightOwl";
 import lightTheme from "prism-react-renderer/themes/nightOwlLight";
-import * as React from 'react'
 import { QuoteIcon } from './QuoteIcon'
 
 const ChakraHighlight = chakra(Highlight, {
