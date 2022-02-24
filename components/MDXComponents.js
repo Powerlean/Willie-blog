@@ -48,6 +48,7 @@ const CustomLink = (props) => {
 
 
 const Quote = (props) => {
+return (
   <Box as="section" bg={useColorModeValue('gray.50', 'gray.800')}>
     <Box maxW="3xl" mx="auto" px={{ base: '6', md: '8' }} pt="12" pb="16">
       <Flex direction="column" align="center" textAlign="center">
@@ -55,9 +56,7 @@ const Quote = (props) => {
           color={useColorModeValue('gray.300', 'gray.600')}
           fontSize={{ base: '3xl', md: '6xl' }}
         />
-        <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="medium" mt="6">
-          {...props}
-</Text>
+        <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="medium" mt="6" {...props} />
         
       </Flex>
       <HStack justify="center" spacing="4" mt="2" color={useColorModeValue('gray.300', 'gray.600')}>
@@ -66,6 +65,7 @@ const Quote = (props) => {
       </HStack>
     </Box>
   </Box>
+);
 };
 
 const Hr = () => {
