@@ -27,16 +27,12 @@ import {
   Tag,
   TagLabel,
   TagRightIcon,
-  Image,
-  Circle, Flex, HStack
+  Image
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { FaGithubAlt, FaTelegram, FaHeartbeat } from "react-icons/fa";
 import { AiOutlineAndroid } from "react-icons/ai";
 import { SiArchlinux, SiFreebsd } from "react-icons/si"
-import * as React from 'react'
-import { Quotee } from '../components/Quotee'
-import { QuoteIcon } from '../components/QuoteIcon'
 
 const Home = () => (
   <Container>
