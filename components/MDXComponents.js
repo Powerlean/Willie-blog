@@ -1,5 +1,5 @@
 import {
-  Circle,Flex, HStack,
+  Flex,
   Box,
   chakra,
   Divider,
@@ -49,8 +49,8 @@ const CustomLink = (props) => {
 
 const Quote = (props) => {
 return (
-  <Box as="section" bg={useColorModeValue('gray.50', 'gray.800')}>
-    <Box maxW="3xl" mx="auto" px={{ base: '6', md: '8' }} pt="12" pb="16">
+  <Box as="section" bg={useColorModeValue('gray.50', 'gray.900')}>
+    <Box mx="auto" px={{ base: '3', md: '4' }} pt="4" pb="6">
       <Flex direction="column" align="center" textAlign="center">
         <QuoteIcon
           color={useColorModeValue('gray.300', 'gray.600')}
@@ -59,10 +59,6 @@ return (
         <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="medium" mt="6" {...props} />
         
       </Flex>
-      <HStack justify="center" spacing="4" mt="2" color={useColorModeValue('gray.300', 'gray.600')}>
-        <Circle size="1" bg="currentColor" />
-        <Circle size="1" bg="currentColor" />
-      </HStack>
     </Box>
   </Box>
 );
