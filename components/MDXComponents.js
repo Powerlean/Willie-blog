@@ -1,6 +1,5 @@
 import {
-  Circle, Flex, HStack,
-  Alert,
+  Circle,Flex, HStack,
   Box,
   chakra,
   Divider,
@@ -62,9 +61,9 @@ const Quote = (props) => {
 </Text>
         
       </Flex>
-      <HStack justify="center" spacing="4" mt="3" color={useColorModeValue('gray.300', 'gray.600')}>
-        <Circle size="2" bg="currentColor" />
-        <Circle size="2" bg="currentColor" />
+      <HStack justify="center" spacing="4" mt="2" color={useColorModeValue('gray.300', 'gray.600')}>
+        <Circle size="1" bg="currentColor" />
+        <Circle size="1" bg="currentColor" />
       </HStack>
     </Box>
   </Box>
