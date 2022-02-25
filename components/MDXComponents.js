@@ -49,14 +49,14 @@ const CustomLink = (props) => {
 
 const Quote = (props) => {
 return (
-  <Box as="section" bg={useColorModeValue('gray.50', 'gray.900')}>
-    <Box mx="auto" px={{ base: '3', md: '4' }} pt="4" pb="6">
+  <Box as="section" bg={useColorModeValue('gray.50', 'blackAlpha.500')}>
+    <Box mx="auto" px={{ base: '2', md: '3' }} pt="2" pb="2">
       <Flex direction="column" align="center" textAlign="center">
         <QuoteIcon
           color={useColorModeValue('gray.300', 'gray.600')}
-          fontSize={{ base: '3xl', md: '6xl' }}
+          fontSize={{ base: 'md', md: 'xl' }}
         />
-        <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="medium" mt="6" {...props} />
+        <Text fontSize={{ base: 'md', md: 'xl' }} fontWeight="300" mt="2" {...props} />
         
       </Flex>
     </Box>
