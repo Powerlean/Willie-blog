@@ -56,7 +56,7 @@ return (
           color={useColorModeValue('gray.300', 'gray.600')}
           fontSize={{ base: 'md', md: 'xl' }}
         />
-        <Text fontSize={{ base: 'md', md: 'xl' }} fontWeight="300" mt="2" {...props} />
+        <Text fontSize={{ base: 'md', md: 'xl' }} fontWeight="medium" mt="2" {...props} />
         
       </Flex>
     </Box>
