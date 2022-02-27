@@ -149,7 +149,7 @@ Python
       bg={useColorModeValue("gray.50", "#2d2d2d")}
       borderRadius="lg"
     >
-      <Badge mt={4} mb={7} colorScheme="cyan">
+      <Badge mt={4} mb={7} colorScheme="gray">
         My friends
       </Badge>
       <UnorderedList>
@@ -176,6 +176,8 @@ Python
             NCDWLQ
 <ExternalLinkIcon mx='2px' />
           </Link>
+    </ListItem>
+     <ListItem mt={3}>
 <Link href="https://www.mis1042.top/" isExternal>
             Misaka10042
 <ExternalLinkIcon mx='2px' />
