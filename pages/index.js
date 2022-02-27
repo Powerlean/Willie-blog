@@ -176,6 +176,10 @@ Python
             NCDWLQ
 <ExternalLinkIcon mx='2px' />
           </Link>
+<Link href="https://www.mis1042.top/" isExternal>
+            Misaka10042
+<ExternalLinkIcon mx='2px' />
+          </Link>
         </ListItem>
       </UnorderedList>
     </Box>
