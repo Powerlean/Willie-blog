@@ -54,9 +54,10 @@ return (
       <Flex direction="column" align="center" textAlign="center">
         <QuoteIcon
           color={useColorModeValue('gray.300', 'gray.600')}
-          fontSize={{ base: 'md', md: 'xl' }}
+          fontSize='md'
         />
-        <Text fontSize={{ base: 'md', md: 'xl' }} fontWeight="medium" mt="2" {...props} />
+        <Text fontSize='md' fontWeight="400"   fontFamily="'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+ mt="2" {...props} />
         
       </Flex>
     </Box>
